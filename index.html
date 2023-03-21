@@ -15,21 +15,33 @@
                 Inserisci i dati e creeremo la "Password perfetta".</p>
             </div>
             <div class="card-body">
-                <form class="row g-3">
+                <form id="form" action="#" class="row g-3">
                     <div class="col-md-12">
                       <label for="name" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="nome">
+                      <input type="text" name="name" class="form-control" id="nome">
                     </div>
                     <div class="col-md-12">
                       <label for="cognome" class="form-label">Cognome</label>
-                      <input type="text" class="form-control" id="cognome">
+                      <input type="text" name="cognome" class="form-control" id="cognome">
                     </div>
                     <div class="col-12">
                       <label for="inputAddress" class="form-label">Il tuo colore prefeito</label>
-                      <input type="text" class="form-control" id="colore" placeholder="Turchino...">
+                      <input type="text" name="colore" class="form-control" id="colore" placeholder="Turchino...">
                     </div>
                     <div class="col-12">
+                        <label for="inputAddress" class="form-label">Il tuo anno di nascita</label>
+                        <input type="number" name="data" class="form-control" id="data">
+                      </div>
+                    <div class="col-12">
                       <button type="submit" class="btn btn-primary">Vai!</button>
+                    </div>
+                    <div class="col-md-12">
+                        <p id="passwordGenerata">
+                            La tua password poco sicura : 
+                        </p>
+                        <p id="passwordGenerata2">
+                            La tua password molto sicura sicura : 
+                        </p>
                     </div>
                   </form>
             </div>
