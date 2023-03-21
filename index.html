@@ -18,19 +18,19 @@
                 <form id="form" action="#" class="row g-3">
                     <div class="col-md-12">
                       <label for="name" class="form-label">Nome</label>
-                      <input type="text" name="name" class="form-control" id="nome" placeholder="Asdrubale">
+                      <input type="text" name="name" class="form-control" id="nome" placeholder="Asdrubale" minlength="4" maxlength="15" required >
                     </div>
                     <div class="col-md-12">
                       <label for="cognome" class="form-label">Cognome</label>
-                      <input type="text" name="cognome" class="form-control" id="cognome" placeholder="Il Visigoto">
+                      <input type="text" name="cognome" class="form-control" id="cognome" placeholder="Il Visigoto" minlength="4" maxlength="15" required>
                     </div>
                     <div class="col-12">
                       <label for="inputAddress" class="form-label">Il tuo colore prefeito</label>
-                      <input type="text" name="colore" class="form-control" id="colore" placeholder="Turchino...">
+                      <input type="text" name="colore" class="form-control" id="colore" placeholder="Turchino..." minlength="3" maxlength="15"required>
                     </div>
                     <div class="col-12">
                         <label for="inputAddress" class="form-label">Il tuo anno di nascita</label>
-                        <input type="number" name="data" class="form-control" id="data" placeholder="400 d.C.">
+                        <input type="number" name="data" class="form-control" id="data" min="1900" max="2023"required value="1910">
                       </div>
                     <div class="col-12">
                       <button type="submit" class="btn btn-primary">Vai!</button>
