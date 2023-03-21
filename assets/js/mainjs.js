@@ -9,6 +9,7 @@ form.addEventListener("submit", function(event) {
     let cognome = document.getElementById("cognome").value;
     let colore = document.getElementById("colore").value;
     let data = document.getElementById("data").value;
+    
     let anni = 2023 - data; 
 
     let passwordGenerata = nome + cognome + anni + colore;
