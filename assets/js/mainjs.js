@@ -19,8 +19,8 @@ form.addEventListener("submit", function(event) {
     console.log(passwordGenerata2);
 
 
-    document.getElementById('passwordGenerata').innerText += " " + passwordGenerata;
-    document.getElementById('passwordGenerata2').innerText += " " + passwordGenerata2;
+    document.getElementById('passwordGenerata').innerText = "La tua password poco sicura :" + " " + passwordGenerata;
+    document.getElementById('passwordGenerata2').innerText ="La tua password molto sicura sicura :" + " " + passwordGenerata2;
 
     
 
